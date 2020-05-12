@@ -1,0 +1,48 @@
+.p-intro{
+    display:flex;
+    width: 80%;
+    height: 400px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    @include mq(){
+        flex-direction: column;
+    }
+    &__left{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-right: $space_4l;
+        @include mq(){
+            margin-right: 0;
+        }
+    }
+    &__img{
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        margin-bottom: $space_xl;
+        @include mq(md){
+            width: 125px;
+            height: 125px;
+        }
+    }
+    &__info{
+        @include mq(){
+            margin-bottom: $space_xl;
+        }
+    }
+    &__job{
+        font-size: $font-size_s;
+    }
+    &__name{
+        font-family: $font-family_sawarabi;
+        font-size: $font-size_l;
+    }
+    &__right{
+        line-height: 2;
+        @include mq(){
+        font-size: $font-size_s;
+        }
+    }
+}

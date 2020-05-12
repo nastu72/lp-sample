@@ -1,0 +1,29 @@
+// ==================================
+// news
+// ==================================
+.p-news {
+    width: 70%;
+    height: 80px;
+    overflow-y: scroll;
+    margin: 0 auto;
+    border-radius: 5px;
+    padding: $space_l $space_xl;
+    &__item {
+      margin-bottom: $space_s;
+    }
+    &__date {
+      color: $font-color_default;
+      font-family: $font-family_default;
+      -webkit-font-smoothing: initial;
+      margin-right: $space_m;
+      @include mq(){
+        font-size: $font-size_s;
+      }
+    }
+    &__title {
+      font-size: $font-size_m;
+      @include mq(){
+        font-size: $font-size_s;
+      }
+    }
+  }

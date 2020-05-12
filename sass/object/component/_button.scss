@@ -1,0 +1,24 @@
+// ==================================
+// btn
+// ==================================
+.c-btn {
+    border: none;
+    cursor: pointer;
+    box-sizing: border-box;
+    display: block;
+    margin: 0 0 0 auto;  // 右寄せ
+    transition: .3s;
+    &:hover {
+      transform: translateY(3px);
+      transition: .3s;
+    }
+    &--color {
+      color: #fff;
+      background: #ccc;
+    }
+    &--l {
+      padding: $space_l $space_m;
+      width: 20%;
+      font-size: $font-size_m;
+    }
+}

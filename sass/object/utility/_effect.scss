@@ -1,0 +1,10 @@
+.js-effect-fade {
+    opacity : 0;
+    transform : translate(0, 45px);
+    transition : all 3s;
+}
+    
+.js-effect-fade.effect-scroll {
+    opacity : 1;
+    transform : translate(0, 0);
+}

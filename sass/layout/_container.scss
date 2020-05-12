@@ -1,0 +1,33 @@
+// ==================================
+// container
+// ==================================
+.l-container{
+    width: $site-width;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 80px;
+    padding-bottom: 100px;
+    @include mq(md){
+        width: 100%;
+        padding-top: $space_xxl;
+        padding-bottom: $space_3l;
+    }
+    &__title{
+        font-family: $font-family_default;
+        text-align: center;
+        font-size: $font-size_l;
+        margin-bottom: $space_xl;
+        @include mq(){
+            font-size: $font-size_m;
+            width: 70%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    &__body{
+        @include mq(){
+            padding-left: $space_l;
+            padding-right: $space_l; 
+        }
+    }
+}

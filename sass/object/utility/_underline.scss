@@ -1,0 +1,23 @@
+/* ホバーアニメーション（下線） */
+.u-underline {
+    position: relative;
+    &:hover,&:focus,&:active {
+        cursor: pointer;
+    }
+    &:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    height: 1px;
+    background-color: $color_corp;
+    width: 0;
+    transition: width .4s;
+    }
+    &:hover:after,&:focus:after,&:active:after {
+        width: 100%;
+        @include mq(){
+            width: 20%;
+        }
+    }
+}	

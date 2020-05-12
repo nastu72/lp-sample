@@ -1,0 +1,40 @@
+// ==================================
+// header
+// ==================================
+.l-header {
+    box-sizing: border-box;
+    width: 100%;
+    height: 80px;
+    color: $font-color_default;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: $space_4l;
+    padding-right: $space_4l;
+    position: fixed;
+    transition: .3s;
+    background: rgba(240, 235, 223, 0.8);
+    z-index: 2;
+    &.float-active {
+        transition: .3s;
+        background: rgba(255, 255, 255, 0.8);
+        @include mq(md){
+          background: rgba(240, 235, 223, 0.8);
+        }
+      }
+    
+    @include mq(md) {
+        height: 60px;
+        padding-right: $space_l;
+        padding-left: $space_l;
+        position: inherit;
+      }
+    &__title{
+        font-size: $font-size_xl;
+        font-family: $font-family_sawarabi;
+        font-weight: bold;
+        @include mq(){
+        font-size: $font-size_l;
+        }
+    }
+}

@@ -1,0 +1,46 @@
+// ==================================
+// panel
+// ==================================
+.c-panel {
+    box-sizing: border-box;
+    background: #fff;
+    position: relative;
+    transition: .5s;
+    &--hover {
+      display: inline-block;
+      transition: .5s;
+      &:hover {
+        transform: scale(1.03);
+        box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+        transition: .5s;
+      }
+    }
+    &__group {
+      margin-right: -$space_l;
+      &__float {
+        overflow: hidden;
+      }
+      &--flex {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .c-panel {
+        float: left;
+        margin-bottom: $space_l;
+        box-sizing: border-box;
+      }
+    }
+    &__works {
+      width: calc(25% - #{$space_l});
+          margin-right: $space_l;
+      @include mq() {
+        width: calc(50% - #{$space_l});
+      }
+    }
+  }
+
+  #works{
+    @include mq(md){
+      overflow: hidden;
+    }
+  }
