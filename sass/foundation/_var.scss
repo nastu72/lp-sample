@@ -32,10 +32,10 @@ $space_4l: 50px;
 $font-family_default: Quicksand, 游ゴシック体, "Yu Gothic", YuGothic, "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 $font-family_sawarabi: "Sawarabi Mincho";
 
-// メディアクエリのブレークポイント（レイアウトが切り替わる横幅）
+// メディアクエリのブレークポイント
 $breakpoints: (
-  'sm': 'screen and (max-width: 414px)',  // iphone6/7用
-  'md': 'screen and (max-width: 768px)',  // ipad用
+  'sm': 'screen and (max-width: 414px)', 
+  'md': 'screen and (max-width: 768px)',
   'lg': 'screen and (max-width: 1000px)',
   'xl': 'screen and (max-width: 1200px)',
 ) !default;
